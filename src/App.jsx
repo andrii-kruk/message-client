@@ -1,8 +1,9 @@
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 
-const MainPage = lazy(() => import("./pages/MainPage/MainPage.jsx"));
-const ProfilePage = lazy(() => import("./pages/ProfilePage/ProfilePage.jsx"));
+const MainPage = lazy(() => import("@pages/MainPage/MainPage.jsx"));
+const LoginPage = lazy(() => import("@pages/LoginPage/LoginPage.jsx"));
+const ProfilePage = lazy(() => import("@pages/ProfilePage/ProfilePage.jsx"));
 
 import { Layout, Loader } from "./components/index.js";
 
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage />} />
+          <Route path="login" element={<LoginPage />} />
           <Route path="profile" element={<ProfilePage />} />
         </Route>
       </Routes>
