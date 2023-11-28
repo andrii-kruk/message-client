@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +15,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*,
+html {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,6 +32,8 @@ a:hover {
 body {
   margin: 0;
   width: 100%;
+
+  font-family: "Poppins", sans-serif;
 }
 
 #root {
@@ -60,6 +69,32 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 420px) {
+  .container {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 730px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1140px;
+  }
 }
 
 @media (prefers-color-scheme: light) {

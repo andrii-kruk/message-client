@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 const MainPage = lazy(() => import("./pages/MainPage/MainPage.jsx"));
 const ProfilePage = lazy(() => import("./pages/ProfilePage/ProfilePage.jsx"));
 
-import { Layout, Loader } from "./pages/components/index.js";
+import { Layout, Loader } from "./components/index.js";
 
 const App = () => {
   return (

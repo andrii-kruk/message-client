@@ -1,5 +1,9 @@
 const MainPage = () => {
-  return <section>Content on main page.</section>;
+  return (
+    <section>
+      <div className="container">MainPage</div>
+    </section>
+  );
 };
 
 export default MainPage;
