@@ -12,4 +12,5 @@ export default defineConfig({
       "@redux": path.resolve(__dirname, "src/redux"),
     },
   },
+  base: '/message-client/',
 });
